@@ -1,0 +1,133 @@
+/* --** Reset CSS **-- */
+* { margin: 0px; padding: 0px; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit; font-size: 100%; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+html, body, button, input, select, textarea { font-family: Arial; font-size: 12px; color: #8c806e; }
+ul, ol { margin-top: 0; margin-bottom: 10px; }
+ul ul { margin-bottom: 0; }
+li { font-size: 13px; margin: 5px 0px 10px 0px; }
+pre { overflow: auto; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { font-weight: normal; text-align: left; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
+a img { border: 0; }
+a, input { outline: none; }
+a { color: #ff8000;  }
+a:hover { text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { margin: 5px 0px 15px 0px; clear: both; font-weight: lighter; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+p {font-size: 13px; margin: 5px 0px 15px 0px; }
+
+img { -ms-interpolation-mode: bicubic; border: 0; height: auto; max-width: 100%; vertical-align: middle; display: block;  }
+figure { margin: 0; }
+::-webkit-input-placeholder { color: rgba(51, 51, 51, 0.7); }
+:-moz-placeholder { color: rgba(51, 51, 51, 0.7); }
+::-moz-placeholder { color: rgba(51, 51, 51, 0.7); opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */ }
+:-ms-input-placeholder { color: rgba(51, 51, 51, 0.7); }
+input:focus, textarea:focus { background-color: #fff; border: 1px solid #c1c1c1; border: 1px solid rgba(51, 51, 51, 0.3); color: #333; }
+input:focus, select:focus { outline: 2px solid #c1c1c1; outline: 2px solid rgba(51, 51, 51, 0.3); }
+.hide { display: none;}
+
+.clear { clear: both; height: 0px; overflow: hidden; }
+
+/* <<< Design Holder >>> */
+.DesignHolder { position: relative; display: block; width: 100%; min-height: 100%; }
+
+/* <<< Layout Frame >>> */
+.LayoutFrame { margin: 0 auto; width: 100%; display: block; }
+
+/* <<< Body >>> */
+body { background: #fff; }
+
+/* <<< Header >>> */
+header { width: 100%; position: fixed; top: 0px; left: 0px; height: 105px; background: rgba(0, 0, 0, 0.5); z-index: 9; }
+header .Center { max-width: 1100px; margin: auto; }
+header .site-logo { padding: 30px 0px 0px 0px; width: 220px; float: left; transition: all 0.3s;  }
+header .site-logo h1 { margin: 0px; }
+header .site-logo h1 a { font-size: 25px; color: #0099cc; font-family: 'Open Sans', sans-serif; font-weight: 800; text-decoration: none; text-transform: uppercase; text-shadow: rgb(3, 3, 3) 0px 2px 5px; transition: all 0.7s ease;  }
+header.smaller { padding: 0px 0px 0px 0px; height: 60px; transition: all 0.3s; background: rgba(0, 0, 0, 0.75); }
+header.smaller .site-logo {padding: 13px 0px 0px 0px; }
+header.smaller .site-logo h1 { line-height: 30px; }
+header.smaller .site-logo h1 a { font-size: 30px;  }
+
+/* <<< Navigation >>> */
+.Navigation { float: right; width: 68.18%; margin-right: 11px; }
+.Navigation ul { list-style: none; margin: 0px; float: right; }
+.Navigation li { float: left; padding: 0px;  margin: 0px; height: 105px; position: relative; transition: all 0.3s ease; }
+.Navigation li a { padding: 42px 41px 36px 41px; font-size: 16px; color: #fff; font-family: 'Open Sans', sans-serif; font-weight: 400; text-decoration: none; display: block; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.Navigation li:hover span, .Navigation li.active span {
+	opacity: 1;
+}
+
+header.smaller .Navigation li a { padding: 16px 41px; }
+header.smaller .Navigation li { height: 60px; }
+
+/* <<< Banner Section >>> */
+.Banner_sec { width: 100%; background: url(../img/KomoBan.jpg) top center no-repeat; height: 687px; position: relative; background-size: cover; }
+.Banner_sec .bannerside { width: 100%; position: absolute; top: 150px; left: 0px; }
+.Banner_sec .Center { max-width: 1100px; margin: auto; }
+
+.Banner_sec .centerside { width: 87%; float: right; position: relative; }
+.Banner_sec .centerside ul { list-style: none; margin: 0px; }
+.Banner_sec .centerside li { padding: 0px; margin: 0; float: none!important; }
+.Banner_sec .centerside #slider { width: 100%; float: right;  position: relative; z-index: 1; }
+
+
+.Banner_sec .centerside .prevBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/prev-arrow.png) no-repeat; position: absolute; top: 213px; left: 15px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.Banner_sec .centerside .prevBtn:hover {  opacity: 1; }	
+.Banner_sec .centerside .nextBtn { width: 42px; height: 42px; display: block; text-indent: -9999px; background: url(../img/next-arrow.png) no-repeat; position: absolute; top: 213px; right: 190px;  z-index: 1; opacity: 0.5; transition: opacity 0.3s ease; }
+.Banner_sec .centerside .nextBtn:hover { opacity: 1; }	
+.Banner_sec .centerside .Shadow { position: absolute; bottom: -3px; left: -25px; max-width: none; }
+
+	/* <<< Container >>> */
+	#Container { overflow: hidden; width: 100%; }
+
+	/* <<< About Section >>> */
+	.About_sec { padding: 115px 0px 88px 0px ; width: 100%; overflow: hidden; }
+	.About_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.About_sec h2 { font-size: 56px; color: #0099cc; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
+	.About_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #0099cc; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; text-align:left; }
+	.About_sec .Tabside { padding: 90px 0px; width: 100%;}
+	.About_sec .Tabside ul { list-style: none; margin: 0px; padding-bottom: 59px; }
+	.About_sec .Tabside li { float: none; padding: 0px; margin: 0px -2px; display: inline-block;}
+	.About_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 18px; color: #989898; font-family: 'Open Sans', sans-serif; font-weight: 400; text-decoration: none; text-transform: uppercase; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
+	.About_sec .Tabside li a:hover, .About_sec .Tabside li a.activeLink { border: solid 1px #0099cc; background: #0099cc; color: #fff;}
+	
+	
+	.About_sec .Tabside .Description { width: 100%; float: right; text-align: left; margin-top: -6px;}
+	.About_sec .Tabside .Description p { padding: 21px 0px 4px 0px; font-size: 14px; color: #0099cc; margin: 0px; font-family:'Open Sans'; line-height: 25px; }
+	
+
+
+	/* <<< Video Section >>> */
+	.Video_sec{ padding: 114px 0px 90px 0px ; width: 100%; overflow: hidden; background: url(../img/KomoVid.jpg) top center no-repeat; background-size: cover; }
+	.Video_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Video_sec h2 { font-size: 56px; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; }
+	.Video_sec p { padding: 25px 0px 35px 0px; font-size: 14px; color: #d8dfe5; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
+	
+	
+	/* <<< Pulau Section >>> */
+	.Pulau_sec { width: 100%; overflow: hidden; }
+	.Pulau_sec .Pulauside { background: url(../img/komopulo.jpg) top center no-repeat; background-size: cover; overflow: hidden;}
+	.Pulau_sec .Center { padding: 115px 0px 77px 0px;  max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
+	.Pulau_sec h2 { font-size: 57px; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px;}
+	.Pulau_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #ebebeb; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
+	
+	/* <<< Map >>> */
+	.Map { position: relative; z-index: 1; width: 100%; overflow: hidden; box-shadow: 0px 1px 12px 3px #005c99;
+		-webkit-box-shadow: 0px 1px 12px 3px #005c99; -moz-box-shadow: 0px 1px 12px 3px #005c99; -o-box-shadow: 0px 1px 12px 3px #005c99; }
+		.Map #GoogleMap { height: 399px; }
+
+		
+		/* <<< footer >>> */
+		footer { overflow: hidden; width: 100%; text-align: center; background: #005c99; }
+		footer .Cntr { padding:  28px 0px; max-width: 1100px; margin: auto;}
+		footer .Cntr p { padding: 0px; font-size: 13px; color: #ffffff; font-family:'Open Sans'; margin: 0px; }
+		
